@@ -664,6 +664,9 @@ ul {
   .costumers_image2 {
     height: 400px;
   }
+  .costumers_ident {
+    margin-bottom: 30px;
+  }
   div .costumer h1 {
     font-size: 25px;
   }
