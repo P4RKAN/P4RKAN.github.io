@@ -33,11 +33,7 @@ p {
   margin-bottom: 0px;
 }
 
-/*--- Шапка ---*/
-header {
-  margin-bottom: 150px;
-}
-
+/*--- Header ---*/
 header .containerz {
   border-bottom: 2px solid #d1273f;
 }
@@ -47,11 +43,26 @@ header .containerz a {
   color: #ffffff;
 }
 
-.text-whites {
-  font-size: 20px;
+header .containerz i {
   color: #ffffff;
+  font-size: 20px;
+}
+
+.text-white {
+  font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-whites {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .fab,
@@ -77,51 +88,139 @@ header .containerz a {
           justify-content: center;
 }
 
+/*--- Cart Modal ---*/
+div .modal-content {
+  background-color: rgba(42, 50, 56, 0.973);
+  border: 1px solid #160606;
+  -webkit-box-shadow: 0px 0px 10px #1a1918;
+          box-shadow: 0px 0px 10px #1a1918;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: 1px solid #000000;
+}
+
+.modal-title {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-secondary {
+  background-color: #d1273f;
+  border: 1px solid #d1273f;
+}
+
+.modal-body {
+  height: 100%;
+  width: 100%;
+}
+
 /*--- Offer Side and Carousel ---*/
 .offer .carousel-item img {
-  border-radius: 0px;
-  border-radius: 5px;
+  border-radius: 25px;
   width: 100%;
   height: 440px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 2px solid #d1273f;
 }
 
 div .address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 150px;
+  margin-top: 130px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 div .address p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   width: 150px;
 }
 
 div .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
-div .icons span {
+div .icons a {
+  text-decoration: none;
+}
+
+div .icons .social {
+  padding: 0px;
+  color: #fff;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 400px;
 }
 
-div .icons a {
+.social__item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.social__item .fa {
   color: #ffffff;
-  text-decoration: none;
+  border-color: #d1273f;
+}
+
+.instagram:hover {
+  border-color: #ed3cca;
+  -webkit-box-shadow: 0px 0px 35px #ed3cca;
+          box-shadow: 0px 0px 35px #ed3cca;
+}
+
+.instagram:hover i {
+  color: #ed3cca;
+}
+
+.twitter:hover {
+  border-color: #77dde7;
+  -webkit-box-shadow: 0px 0px 35px #77DDE7;
+          box-shadow: 0px 0px 35px #77DDE7;
+}
+
+.twitter:hover i {
+  color: #77dde7;
+}
+
+.youtube:hover {
+  border-color: #e32636;
+  -webkit-box-shadow: 0px 0px 35px #e32636;
+          box-shadow: 0px 0px 35px #e32636;
+}
+
+.youtube:hover i {
+  color: #e32636;
+}
+
+.facebook:hover {
+  border-color: #6495ed;
+  -webkit-box-shadow: 0px 0px 35px #6495ed;
+          box-shadow: 0px 0px 35px #6495ed;
+}
+
+.facebook:hover i {
+  color: #6495ed;
 }
 
 /*--- Контент головної частини ---*/
@@ -231,6 +330,11 @@ div .i {
 div .carousel-caption h5 {
   margin-bottom: 15px;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+}
+
+div .carousel-caption p {
+  font-size: 18px;
 }
 
 /*--- Categories 1 --*/
@@ -305,6 +409,20 @@ a {
   font-weight: 500;
 }
 
+/*--- Hover Effects ---*/
+.hover-effect {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hover-effect:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 /*--- Pros --*/
 .card-body {
   width: 100%;
@@ -368,9 +486,17 @@ div .text {
   margin-top: 8px;
 }
 
+div .pross-h {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
 /*--- Customers ---*/
 .costumer h1 {
   font-size: 35px;
+  font-weight: 500;
 }
 
 .costumers_image {
@@ -448,7 +574,6 @@ label {
   font-size: 18px;
   font-weight: 300;
   color: #d1273f;
-  text-align: right;
   text-decoration: none;
 }
 
@@ -526,6 +651,11 @@ ul {
   margin-right: 10px;
 }
 
+.form-img {
+  width: 100%;
+  height: auto;
+}
+
 /*--- Adaptive ---*/
 @media screen and (max-width: 991px) {
   header {
@@ -535,9 +665,69 @@ ul {
     margin-bottom: 100px;
     margin-top: 100px;
   }
+  div .icons {
+    width: 100%;
+  }
+  div .icons .social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .offer-strong {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 40px;
+    height: 150px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 180px;
+  }
+  .p {
+    font-size: 30px;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+  }
+  .btn-outline-danger {
+    width: 50%;
+    height: 60px;
+    margin-left: 180px;
+  }
+  .offer-slider {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+  div .icons {
+    margin-top: 350px;
+  }
+  div .address {
+    margin-top: 50px;
+  }
+  div .address p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .offer {
+    margin-top: 50px;
+  }
   .slider {
     height: 500px;
     width: 100%;
+  }
+  div .carousel-caption h5 {
+    font-size: 20px;
+  }
+  div .carousel-caption p {
+    font-size: 15px;
   }
   .categories_image1 {
     height: 400px;
@@ -546,7 +736,7 @@ ul {
     height: 200px;
   }
   .categories-text {
-    font-size: 20px;
+    font-size: 25px;
   }
   .categories_overflow1_2 {
     margin-top: 170px;
@@ -560,14 +750,23 @@ ul {
   .pros-text {
     font-size: 15px;
   }
+  .pross_overflow {
+    margin-top: 0px;
+  }
   .costumers_image {
-    height: 500px;
+    height: 400px;
   }
   .costumers_image2 {
     height: 250px;
   }
   div .costumer h1 {
     font-size: 25px;
+  }
+  div .pross-h {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
   }
 }
 
@@ -576,20 +775,40 @@ ul {
     margin-bottom: 0px;
   }
   section {
-    margin-bottom: 100px;
     margin-top: 100px;
   }
   div .address {
     margin-top: 50px;
   }
+  div .address p {
+    font-size: 15px;
+  }
   div .icons {
-    margin-top: 50px;
+    margin-top: 220px;
+  }
+  div .icons .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .text-white {
+    font-size: 15px;
+  }
+  .text-whites {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   .carousel-item {
-    height: 350px;
+    height: 450px;
   }
   .offer {
     margin-top: 50px;
+  }
+  .offer-button {
+    font-size: 20px;
   }
   .offer-side,
   .offer-strong {
@@ -620,6 +839,7 @@ ul {
     display: flex;
     width: 100%;
     height: auto;
+    margin-left: 0px;
   }
   .p {
     font-size: 25px;
@@ -633,21 +853,35 @@ ul {
     font-size: 25px;
     margin-bottom: 25px;
   }
+  .btn-outline-danger {
+    width: 270px;
+    height: 60px;
+    margin-left: 0px;
+  }
+  .carousel-item {
+    height: 350px;
+  }
+  div .offer-slider .carousel-item {
+    height: 350px;
+  }
+  div .offer-slider .carousel-item img {
+    height: 350px;
+  }
   .slider {
     height: 350px;
     width: 100%;
   }
   .categories_image1 {
-    height: 150px;
+    height: 160px;
   }
   .categories_image1_2 {
-    height: 150px;
+    height: 160px;
   }
   .categories-text {
-    font-size: 16px;
+    font-size: 20px;
   }
   .categories_overflow1_2 {
-    margin-top: 120px;
+    margin-top: 130px;
   }
   h1 {
     font-size: 25px;
@@ -658,6 +892,12 @@ ul {
   .pros-text {
     font-size: 15px;
   }
+  div .pross-h {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
   .costumers_image {
     height: 400px;
   }
@@ -665,14 +905,13 @@ ul {
     height: 400px;
   }
   .costumers_ident {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
   div .costumer h1 {
     font-size: 25px;
   }
-  .dtf {
-    font-size: 17px;
-    margin-left: 10px;
+  .form-small-text {
+    font-size: 16px;
   }
 }
 
@@ -687,11 +926,30 @@ ul {
   div .address {
     margin-top: 50px;
   }
+  div .address p {
+    font-size: 16px;
+  }
   div .icons {
-    margin-top: 50px;
+    margin-top: 200px;
+    width: 100%;
+  }
+  div .icons .social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .offer-button {
+    font-size: 20px;
+  }
+  .carousel-inner {
+    height: 100%;
   }
   .carousel-item {
-    height: 350px;
+    height: 100%;
   }
   .offer {
     margin-top: 50px;
@@ -714,7 +972,7 @@ ul {
   }
   .offer-side .btn-outline-danger,
   .offer-strong .btn-outline-danger {
-    width: 100%;
+    width: 50%;
     height: 50px;
     border-radius: 25px;
   }
@@ -734,10 +992,6 @@ ul {
     width: 100%;
     height: auto;
   }
-  span .offer-button {
-    font-size: 25px;
-    margin-bottom: 25px;
-  }
   .slider {
     height: 350px;
     width: 100%;
@@ -749,22 +1003,30 @@ ul {
     height: 200px;
   }
   .categories-text {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .categories_overflow1_2 {
-    margin-top: 160px;
+    margin-bottom: -10px;
   }
   .categories_indent2 {
     margin-bottom: 30px;
   }
+  .form-text {
+    font-size: 20px;
+  }
   h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .pros_card {
-    height: 385px;
+    height: 380px;
   }
   .pros-text {
     font-size: 15px;
+  }
+  .pross_overflow {
+    margin-top: 0px;
   }
   .costumers_image {
     height: 400px;
@@ -773,14 +1035,14 @@ ul {
     height: 400px;
   }
   .costumers_ident {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   div .costumer h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
-  .dtf {
-    font-size: 17px;
-    margin-left: 10px;
+  .form-small-text,
+  .form-link {
+    font-size: 15px;
   }
 }
 
@@ -789,17 +1051,152 @@ ul {
     margin-bottom: 0px;
   }
   section {
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-top: 60px;
   }
   div .address {
     margin-top: 50px;
   }
+  div .address p {
+    font-size: 13px;
+  }
   div .icons {
+    margin-top: 200px;
+  }
+  .offer-image {
+    width: 50%;
+    height: 30px;
+  }
+  .carousel-inner img {
+    border-radius: 25px;
+    width: 100%;
+    height: 300px;
+    border: 2px solid #d1273f;
+  }
+  .offer-side,
+  .offer-strong {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer-side .btn-outline-danger,
+  .offer-strong .btn-outline-danger {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+  }
+  .offer-strong {
+    font-size: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+  .p {
+    font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  span .offer-button {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .slider {
+    height: 600px;
+    width: 100%;
+  }
+  .address p {
+    font-size: 10px;
+  }
+  .categories_image1 {
+    height: 150px;
+  }
+  .categories_image1_2 {
+    height: 150px;
+  }
+  .categories-text {
+    font-size: 16px;
+  }
+  .categories_overflow1 {
+    margin-bottom: 5px;
+  }
+  .categories_indent2 {
+    margin-bottom: 30px;
+  }
+  .categories_overflow1_2 {
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .pros_card {
+    height: 385px;
+  }
+  .pros-text {
+    font-size: 15px;
+  }
+  div .pross-h {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  .costumers_image {
+    height: 350px;
+  }
+  .costumers_image2 {
+    height: 350px;
+  }
+  .costumers_ident {
+    margin-bottom: 0px;
+  }
+  div .costumer h1 {
+    font-size: 20px;
+  }
+  .form-small-text,
+  .form-link {
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .form-link {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    margin-bottom: 0px;
+  }
+  section {
+    margin-top: 100px;
+  }
+  div .address {
     margin-top: 50px;
   }
+  div .address p {
+    font-size: 11px;
+  }
+  div .icons {
+    margin-top: 150px;
+  }
   .carousel-item {
-    height: 350px;
+    height: 450px;
   }
   .offer {
     margin-top: 50px;
@@ -827,7 +1224,7 @@ ul {
     border-radius: 25px;
   }
   .offer-strong {
-    font-size: 35px;
+    font-size: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -835,7 +1232,7 @@ ul {
     height: auto;
   }
   .p {
-    font-size: 25px;
+    font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -846,8 +1243,22 @@ ul {
     font-size: 25px;
     margin-bottom: 25px;
   }
-  .slider {
+  .btn-outline-danger {
+    width: 270px;
+    height: 60px;
+    margin-left: 0px;
+  }
+  .carousel-item {
     height: 300px;
+  }
+  div .offer-slider .carousel-item {
+    height: 300px;
+  }
+  div .offer-slider .carousel-item img {
+    height: 300px;
+  }
+  .slider {
+    height: 350px;
     width: 100%;
   }
   .categories_image1 {
@@ -857,13 +1268,13 @@ ul {
     height: 150px;
   }
   .categories-text {
-    font-size: 16px;
+    font-size: 20px;
   }
   .categories_overflow1_2 {
     margin-top: 120px;
   }
   h1 {
-    font-size: 25px;
+    font-size: 18px;
   }
   .pros_card {
     height: 385px;
@@ -871,18 +1282,39 @@ ul {
   .pros-text {
     font-size: 15px;
   }
+  div .pross-h {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
   .costumers_image {
-    height: 200px;
+    height: 300px;
   }
   .costumers_image2 {
-    height: 200px;
+    height: 300px;
+  }
+  .costumers_ident {
+    margin-bottom: 0px;
   }
   div .costumer h1 {
     font-size: 20px;
   }
-  .dtf {
-    font-size: 17px;
-    margin-left: 10px;
+  .form-text {
+    font-size: 18px;
+  }
+  section .form label .name {
+    font-size: 12px;
+  }
+  .form-small-text,
+  .form-link {
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 11px;
+    padding-top: 5px;
+  }
+  .form-link {
+    padding-left: 0px;
   }
 }
 
@@ -891,17 +1323,27 @@ ul {
     margin-bottom: 0px;
   }
   section {
-    margin-bottom: 80px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   div .address {
     margin-top: 50px;
   }
-  div .icons {
-    margin-top: 50px;
+  div .address p {
+    font-size: 10px;
   }
-  .carousel-item {
+  div .icons {
+    margin-top: 180px;
+  }
+  .offer-image {
+    width: 50%;
     height: 350px;
+  }
+  .carousel-inner img {
+    border-radius: 25px;
+    width: 100%;
+    height: 300px;
+    border: 2px solid #d1273f;
   }
   .offer {
     margin-top: 50px;
@@ -929,15 +1371,16 @@ ul {
     border-radius: 25px;
   }
   .offer-strong {
-    font-size: 35px;
+    font-size: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 50px;
+    padding-bottom: 10px;
   }
   .p {
-    font-size: 25px;
+    font-size: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -949,8 +1392,11 @@ ul {
     margin-bottom: 25px;
   }
   .slider {
-    height: 300px;
+    height: 600px;
     width: 100%;
+  }
+  .address p {
+    font-size: 10px;
   }
   .categories_image1 {
     height: 150px;
@@ -959,10 +1405,13 @@ ul {
     height: 150px;
   }
   .categories-text {
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .categories_overflow1 {
+    margin-top: 125px;
   }
   .categories_overflow1_2 {
-    margin-top: 120px;
+    margin-top: 125px;
   }
   h1 {
     font-size: 25px;
@@ -973,66 +1422,35 @@ ul {
   .pros-text {
     font-size: 15px;
   }
+  div .pross-h {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
   .costumers_image {
-    height: 200px;
+    height: 300px;
   }
   .costumers_image2 {
-    height: 200px;
+    height: 300px;
+  }
+  .costumers_ident {
+    margin-bottom: 0px;
   }
   div .costumer h1 {
     font-size: 20px;
   }
-  .dtf {
+  .form-text {
     font-size: 17px;
-    margin-left: 10px;
   }
-}
-
-@media screen and (max-width: 375px) {
-  .prosz {
-    width: 100%;
-    height: 200px;
+  .form-small-text,
+  .form-link {
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 10px;
+    padding-top: 5px;
   }
-  .slider {
-    height: 250px;
-  }
-  .cat1 {
-    padding-left: 15px;
-  }
-  .cat11 {
-    padding-bottom: 20px;
-  }
-  .cat2 {
-    margin-bottom: 20px;
-    padding-left: 15px;
-  }
-  .pros__img {
-    margin-bottom: 20px;
-  }
-  .pros_row {
-    margin-bottom: 20px;
-    padding-left: 15px;
-  }
-  .pros__h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-  div .icons,
-  div .address {
-    margin-top: 80px;
-  }
-  header {
-    margin-bottom: 50px;
-  }
-  .offer .carousel-item img {
-    border-radius: 15px;
-    border: 2px solid #d1273f;
-    border-radius: 15px;
-    width: 100%;
-    height: 300px;
-  }
-  section {
-    margin-top: 80px;
-    margin-bottom: 80px;
+  .form-link {
+    padding-left: 0px;
   }
 }
