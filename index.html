@@ -284,7 +284,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6 col-lg-8 d-flex flex-column  categories_indent2 hover-effect">
+        <div class="col-6 col-lg-6 d-flex flex-column  categories_indent2 hover-effect">
           <a href="#">
             <img src="img/Cat2/4.jpg" alt="" class="categories_image1_2 ">
             <div class="card-img-overlay categories_overflow1_2 text-center">
@@ -292,11 +292,11 @@
             </div>
           </a>
         </div>
-        <div class="col-6 col-lg-4 categories_indent2">
+        <div class="col-6 col-lg-6 categories_indent2">
           <a href="#">
             <img src="img/Cat2/5.jpg" alt="" class="categories_image1_2 hover-effect">
             <div class="card-img-overlay categories_overflow1_2 text-center">
-              <p class="categories-text">Снюс</p>
+              <p class="categories-text">Запальнички</p>
             </div>
           </a>
         </div>
@@ -476,18 +476,23 @@
             <li><a href="#">Повернення та обмін</li>
             <li><a href="#">Про магазин</a></li>
             <li><a href="#">Працевлаштування</a></li>
-            <li><a href="#">Політика обробки персональних даних</a></li>
+            <li><a href="#">Політика обробки перс. даних</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md-6  col-lg-3 col-xl-3">
-          <p class="footer">Ми в соц. мережах</p>
+        <div class="col-xl-3">
+          <p class="footer">Ми в соц.мережах</p>
           <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">instagram</li>
+            <li><a href="#">Telegram</a></li>
             <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</li>
             <li><a href="#">Youtube</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Viber</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="map"></div>
         </div>
       </div>
       <div class="row">
@@ -496,7 +501,7 @@
           <a href="#" class="small">Вул.Свободи 10/А</a>
           <a href="#" class="small">пост-код: 29002</a>
         </div>
-        <div class="col-6 col-md-6 col-lg-6  col-xl-5 offset-xl-2">
+        <div class="col-6 col-md-6 col-lg-6  col-xl-5 offset-xl-2 d-flex justify-content-end">
           <a href="#" class="small">© 2020. Всі права захищені. ООО «Tobaco inc.» (TBC LLC).</a>
         </div>
       </div>
@@ -510,8 +515,23 @@
 
 
 
-
-
+  <!--Goodle Maps-->
+  <script>
+    function initMap() {
+      const uluru = { lat: 49.4285108, lng: 26.9796327 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15.75,
+        center: uluru,
+      });
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBBlymwEuwutp9btDhCU5UrtJLoGwUB3c&callback=initMap&libraries=&v=weekly"
+    defer></script>
 
   <!--jQuery, Popper and JavaScript-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
